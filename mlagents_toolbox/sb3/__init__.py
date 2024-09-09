@@ -1,1 +1,2 @@
 from mlagents_toolbox.sb3.export import export_as_onnx
+from mlagents_toolbox.sb3.net_init import init_network
