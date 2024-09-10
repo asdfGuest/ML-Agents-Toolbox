@@ -60,12 +60,12 @@ def init_network(model) :
     )
 
     cnt += _find_init_linear_layer(
-        model.policy.mlp_extractor.policy_net,
+        model.policy.action_net,
         Initialization.KaimingHeNormal,
         gain=0.2
     )
     cnt += _find_init_linear_layer(
-        model.policy.mlp_extractor.value_net,
+        model.policy.value_net,
         Initialization.XavierGlorotUniform,
         gain=1.0
     )
